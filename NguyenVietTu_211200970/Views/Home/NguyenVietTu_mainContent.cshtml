@@ -19,39 +19,41 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div class="section group content_product">
-				
-				@foreach (HangHoa hh in Model)
-				{
-					<div class="grid_1_of_4 images_1_of_4">
-						<a href="preview.html"><img src="images/@hh.Anh" alt="" /></a>
-						<h2>@hh.TenHang</h2>
-						<div class="price-details">
-							<div class="price-number">
-								<p><span class="rupees">$@hh.Gia</span></p>
+			<div class="wrap_content_product">
+				<div class="section group content_product">
+
+					@foreach (HangHoa hh in Model)
+					{
+						<div class="grid_1_of_4 images_1_of_4">
+							<a href="preview.html"><img src="images/@hh.Anh" alt="" /></a>
+							<h2>@hh.TenHang</h2>
+							<div class="price-details">
+								<div class="price-number">
+									<p><span class="rupees">$@hh.Gia</span></p>
+								</div>
+								<div class="add-cart">
+									<h4><a href="preview.html">Add to Cart</a></h4>
+								</div>
+								<div class="clear"></div>
 							</div>
-							<div class="add-cart">
-								<h4><a href="preview.html">Add to Cart</a></h4>
-							</div>
-							<div class="clear"></div>
 						</div>
-					</div>
 
-				}
-				
+					}
+
+				</div>
+
+
+				<ul class="pagination">
+					@for (int i = 1; i <= ViewBag.pageNum; i++)
+					{
+						<li class="page-item" data-page="@i"
+						@(ViewBag.mid != null ? "lh = " + ViewBag.mid : " ")
+						@(ViewBag.keyword != null ? "keyword = " + ViewBag.keyword : " ")>
+							<a class="page-link">@i</a>
+						</li>
+					}
+				</ul>
 			</div>
-
-
-			<ul class="pagination">
-				@for (int i = 1; i <= ViewBag.pageNum; i++)
-				{
-					<li class="page-item" page="@i"
-					@(ViewBag.mid != null ? "mid = " + ViewBag.mid : " ")
-					@(ViewBag.keyword != null ? "keyword = " + ViewBag.keyword : " ")>
-						<a class="page-link">@i</a>
-					</li>
-				}
-			</ul>
 
 
 			<!-- End Feature Products -->
@@ -68,16 +70,45 @@
 				const lh = $(this).data("id");
 
 			$.ajax({
-				url: '/Home/ShowProducts',
+				url: '/Home/ShowProductsFilter',
 				data: { lh: lh }, // 1
 				success: function (response) {
 					console.log(response)
-					$(".content_product").html(response);
+					$(".wrap_content_product").html(response);
 				}
 			});
 
 
 			});
+
+
+		$('body').on('click', 'li.page-item', function (e) {
+			var page = $(this).data('page');
+			var lh = $(this).attr('mid');
+			var keyword = $(this).attr('keyword');
+
+
+			$.ajax({
+				url: "/Home/ShowProductsFilter",
+				data: { lh: lh, keyword: keyword, page: page },
+				success: function (response) {
+					$(".wrap_content_product").html(response);
+				}
+			});
+		});
+
+
+		$("button#btnSearch").click(function (e) {
+			var keyword = $("#keyword").val();
+			var data = { keyword: keyword };
+			$.ajax({
+				url: "/Home/ShowProductsFilter",
+				data: data,
+				success: function (response) {
+					$(".wrap_content_product").html(response);
+				}
+			});
+		});
 
     </script>
 }

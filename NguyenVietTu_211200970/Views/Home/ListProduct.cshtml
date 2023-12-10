@@ -6,20 +6,36 @@
 
 @model IEnumerable<HangHoa>
 
-@foreach (HangHoa hh in Model)
-{
-	<div class="grid_1_of_4 images_1_of_4">
-		<a href="preview.html"><img src="images/@hh.Anh" alt="" /></a>
-		<h2>@hh.TenHang</h2>
-		<div class="price-details">
-			<div class="price-number">
-				<p><span class="rupees">$@hh.Gia</span></p>
-			</div>
-			<div class="add-cart">
-				<h4><a href="preview.html">Add to Cart</a></h4>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
+<div class="section group content_product">
 
-}
+	@foreach (HangHoa hh in Model)
+	{
+		<div class="grid_1_of_4 images_1_of_4">
+			<a href="preview.html"><img src="images/@hh.Anh" alt="" /></a>
+			<h2>@hh.TenHang</h2>
+			<div class="price-details">
+				<div class="price-number">
+					<p><span class="rupees">$@hh.Gia</span></p>
+				</div>
+				<div class="add-cart">
+					<h4><a href="preview.html">Add to Cart</a></h4>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+	}
+
+	
+</div>
+
+<ul class="pagination">
+	@for (int i = 1; i <= ViewBag.pageNum; i++)
+	{
+		<li class="page-item" data-page="@i"
+		@(ViewBag.mid != null ? "lh = " + ViewBag.mid : " ")
+		@(ViewBag.keyword != null ? "keyword = " + ViewBag.keyword : " ")>
+			<a class="page-link">@i</a>
+		</li>
+	}
+</ul>
