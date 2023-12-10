@@ -1,0 +1,45 @@
+﻿
+
+
+@model HangHoa
+<h1>Nguyen Viet Tu</h1>
+<p>Them moi hang hoa</p>
+
+<div>
+    <form asp-controller="Home" asp-action="AddToCart" method="post" class="mt-3">
+        <div class="form-group">
+            <label for="Category">Category</label>
+            <select asp-for="MaLoai" class="custom-select mr-sm-2"
+                    asp-items="@ViewBag.CategoryId"></select>
+        </div>
+        <div style="margin-top:7px" class="form-group row">
+            <label asp-for="TenHang" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="TenHang" class="form-control" placeholder="Last Name">
+            </div>
+            <span asp-validation-for="TenHang" class="text-danger"></span>
+        </div>
+
+        <div style="margin-top:7px" class="form-group row">
+            <label asp-for="Gia" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Gia" class="form-control">
+            </div>
+            <span asp-validation-for="Gia" class="text-danger"></span>
+        </div>
+        <div style="margin-top:7px" class="form-group row">
+            <label asp-for="Anh" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="Anh" class="form-control">
+            </div>
+            <span asp-validation-for="Anh" class="text-danger"></span>
+        </div>
+        <div style="margin-top:10px" class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+

@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NguyenVietTu_211200970
+build_property.RootNamespace = NguyenVietTu_211200970
+build_property.ProjectDir = D:\LTTWEB-CNNT3\NguyenVietTu_211200970\NguyenVietTu_211200970\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\LTTWEB-CNNT3\NguyenVietTu_211200970\NguyenVietTu_211200970
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Home/AddToCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRUb0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Home/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Home/CreateProduct2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVQcm9kdWN0Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Home/ListProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMaXN0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Home/NguyenVietTu_mainContent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOZ3V5ZW5WaWV0VHVfbWFpbkNvbnRlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Shared/Components/Nav/RenderNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2XFJlbmRlck5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Shared/NguyenVietTu_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ndXllblZpZXRUdV9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Shared/NguyenVietTu_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ndXllblZpZXRUdV9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Shared/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByaXZhY3kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LTTWEB-CNNT3/NguyenVietTu_211200970/NguyenVietTu_211200970/Views/Shared/NguyenVietTu_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5ndXllblZpZXRUdV9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rcm8im30fx
